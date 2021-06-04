@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    padding: 24px 0;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: #ffffff;
+}
+
+.header-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: .5s;
+    position: relative;
+}
+
+.header-link:not(last child) {
+    margin-right: 50px;
+}
+
+.header-link:hover {
+    color: #adff00;
+}
+
+.header-link:hover:before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #adff00;
+    position: absolute;
+    bottom: 0;
+}
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("../images/bg.png") no-repeat center/cover;
+}
+
+.hero-title {
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.hero-title span {
+    color: #adff00;
+}
+
+.hero-desc {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffffff;
+}
+
+.hero-desc span {
+    font-weight: bold;
+}
+
+.team{
+    background: #0007 url("../images/team.png") no-repeat center/cover;
+    background-blend-mode: darken;
+    padding: 76px 0 93px;
+    color: white;
+    text-align: center;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    margin-top:76px ;
+}
+.section-title span{
+    color: #adff00;
+}
+.section-title:before{
+    content: "";
+    width:180px ;
+    height: 4px;
+    background-color: #adff00;
+    position: absolute;
+    bottom: -10px;
+    right:0 ;
+    left: 0;
+    margin: auto;
+}
+.section-title:after {
+    content: "";
+    width: 130px;
+    height: 4px;
+    background-color: #adff00;
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.team-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+.row{
+    display: flex;
+    flex-wrap:wrap ;
+    margin: 0 -15px ;
+}
+.col-3{
+    padding: 0 15px;
+    width: 25%;
+}
+.team-img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 77px 0 13px;
+}
+.team-subtitle{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 13px 0;
+}
+.team-desc{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 93px;
+}
+.team-box:hover .team-img{
+    border: 3px solid #ADFF00;
+}
+.services{
+    padding: 92px 0 82px;
+}
+.section-title{
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 50px;
+    color: #090909;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    margin: 47px;
+}
+.section-title span{
+    font-weight: bold ;
+    color: #090909;
+}
+.section-desc{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 95px;
+    margin-top: 47px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.col-3{
+    padding: 0 15px;
+    width: 25%;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.services-icon{
+    width: 119px;
+    height: 120px;
+    border: 4px solid #ADFF00;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.services-title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 26px;
+    margin-bottom: 15px;
+}
+.services-desc{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+.contact{
+    background: #090909;
+    text-align: center;
+    color: white;
+    padding: 43px 0 72px;
+}
+.contact-title {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 55px;
+}
+.contact-title span{
+    color: #ADFF00;
+}
+.contact-form {
+    width: 476px;
+}
+.contact-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
